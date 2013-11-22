@@ -7,3 +7,7 @@
 #ifdef __OBJC__
     #import <Cocoa/Cocoa.h>
 #endif
+
+#define BPT_PLUGINS_DIRECTORY_PATH              @"/Library/Internet Plug-Ins"
+#define BPT_DISABLED_DIRECTORY_NAME             @"Disabled"
+#define BPT_DISABLED_DIRECTORY_PATH             [BPT_PLUGINS_DIRECTORY_PATH stringByAppendingPathComponent:BPT_DISABLED_DIRECTORY_NAME]

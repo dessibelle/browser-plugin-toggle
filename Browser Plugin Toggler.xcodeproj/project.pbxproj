@@ -18,6 +18,9 @@
 		F480B79A183F61BE00F33F42 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F480B779183F61BE00F33F42 /* Cocoa.framework */; };
 		F480B7A2183F61BE00F33F42 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F480B7A0183F61BE00F33F42 /* InfoPlist.strings */; };
 		F480B7A4183F61BE00F33F42 /* Browser_Plugin_TogglerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F480B7A3183F61BE00F33F42 /* Browser_Plugin_TogglerTests.m */; };
+		F480B7B0183F620100F33F42 /* SFInternetPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = F480B7AF183F620100F33F42 /* SFInternetPlugin.m */; };
+		F480B7B3183F621F00F33F42 /* SFPluginToggler.m in Sources */ = {isa = PBXBuildFile; fileRef = F480B7B2183F621F00F33F42 /* SFPluginToggler.m */; };
+		F480B7BD183F808A00F33F42 /* SFMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = F480B7BC183F808A00F33F42 /* SFMenuController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,14 @@
 		F480B79F183F61BE00F33F42 /* Browser Plugin TogglerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Browser Plugin TogglerTests-Info.plist"; sourceTree = "<group>"; };
 		F480B7A1183F61BE00F33F42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F480B7A3183F61BE00F33F42 /* Browser_Plugin_TogglerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Browser_Plugin_TogglerTests.m; sourceTree = "<group>"; };
+		F480B7AE183F620100F33F42 /* SFInternetPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFInternetPlugin.h; sourceTree = "<group>"; };
+		F480B7AF183F620100F33F42 /* SFInternetPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFInternetPlugin.m; sourceTree = "<group>"; };
+		F480B7B1183F621F00F33F42 /* SFPluginToggler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPluginToggler.h; sourceTree = "<group>"; };
+		F480B7B2183F621F00F33F42 /* SFPluginToggler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPluginToggler.m; sourceTree = "<group>"; };
+		F480B7B5183F78F000F33F42 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F480B7B8183F798A00F33F42 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F480B7BB183F808A00F33F42 /* SFMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMenuController.h; sourceTree = "<group>"; };
+		F480B7BC183F808A00F33F42 /* SFMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFMenuController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +106,8 @@
 		F480B778183F61BE00F33F42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F480B7B8183F798A00F33F42 /* QuartzCore.framework */,
+				F480B7B5183F78F000F33F42 /* CoreGraphics.framework */,
 				F480B779183F61BE00F33F42 /* Cocoa.framework */,
 				F480B798183F61BE00F33F42 /* XCTest.framework */,
 				F480B77B183F61BE00F33F42 /* Other Frameworks */,
@@ -115,6 +128,12 @@
 		F480B77F183F61BE00F33F42 /* Browser Plugin Toggler */ = {
 			isa = PBXGroup;
 			children = (
+				F480B7AE183F620100F33F42 /* SFInternetPlugin.h */,
+				F480B7AF183F620100F33F42 /* SFInternetPlugin.m */,
+				F480B7B1183F621F00F33F42 /* SFPluginToggler.h */,
+				F480B7B2183F621F00F33F42 /* SFPluginToggler.m */,
+				F480B7BB183F808A00F33F42 /* SFMenuController.h */,
+				F480B7BC183F808A00F33F42 /* SFMenuController.m */,
 				F480B78B183F61BE00F33F42 /* SFAppDelegate.h */,
 				F480B78C183F61BE00F33F42 /* SFAppDelegate.m */,
 				F480B78E183F61BE00F33F42 /* MainMenu.xib */,
@@ -253,8 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F480B7B3183F621F00F33F42 /* SFPluginToggler.m in Sources */,
+				F480B7BD183F808A00F33F42 /* SFMenuController.m in Sources */,
 				F480B786183F61BE00F33F42 /* main.m in Sources */,
 				F480B78D183F61BE00F33F42 /* SFAppDelegate.m in Sources */,
+				F480B7B0183F620100F33F42 /* SFInternetPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

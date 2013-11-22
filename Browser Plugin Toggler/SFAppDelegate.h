@@ -8,8 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class SFPluginToggler, SFMenuController;
+
 @interface SFAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (retain) NSStatusItem *statusItem;
+
+@property (retain) SFMenuController *menuController;
+@property (retain) SFPluginToggler *toggler;
 
 @end
